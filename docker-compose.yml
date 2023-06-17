@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend/
+    env_file: .env
+    ports:
+      - "${HOST_PORT_APP}:${APP_SERVER_PORT}"
+    volumes:
+      - ../.:/home/audio-transcription/frontend
+    working_dir: /home/audio-transcription/frontend/.
+
+  backend:
+    container_name: backend
+    build:
+      context: ./backend/
+    env_file: .env
+    ports:
+      - "${HOST_PORT_SERVICE}:${TRANSCRIPTION_SERVER_PORT}"
+    volumes:
+      - ../.:/home/audio-transcription/backend
+    working_dir: /home/audio-transcription/backend/.
