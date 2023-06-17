@@ -18,4 +18,5 @@
 
 - add nginx as reverse proxy
 
-## React frontend
+## Improve frontend
+- pick a JS framework
