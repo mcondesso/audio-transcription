@@ -22,7 +22,9 @@ dictConfig(
             "file": {
                 # if needed, switch to RotatingFileHandler or TimeRotatingFileHandler
                 "class": "logging.FileHandler",
-                "filename": os.path.join(os.getenv("LOG_FOLDER"), os.getenv("LOG_FILENAME")),
+                "filename": os.path.join(
+                    os.getenv("LOG_FOLDER"), os.getenv("LOG_BACKEND_FILENAME")
+                ),
                 "formatter": "default",
             },
         },
