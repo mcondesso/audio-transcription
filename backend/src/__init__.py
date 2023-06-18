@@ -19,7 +19,7 @@ def create_app():
     app.secret_key = "foobar"
     CORS(app)
 
-    app.config["TRANSCRIPTION_SERVER_PORT"] = os.getenv("TRANSCRIPTION_SERVER_PORT")
+    app.config["FLASK_RUN_PORT"] = os.getenv("FLASK_RUN_PORT")
 
     app.register_blueprint(root_bp)
     app.register_blueprint(transcribe_bp)

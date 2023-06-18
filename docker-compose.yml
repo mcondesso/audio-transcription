@@ -18,7 +18,7 @@ services:
       context: ./backend/
     env_file: .env
     ports:
-      - "${HOST_PORT_SERVICE}:${TRANSCRIPTION_SERVER_PORT}"
+      - "${HOST_PORT_SERVICE}:${FLASK_RUN_PORT}"
     volumes:
       - ../.:/home/audio-transcription/backend
     working_dir: /home/audio-transcription/backend/.

@@ -29,7 +29,6 @@ def request_transcription(audio_file):
 
 
 def get_url():
-    address = "http://" + os.getenv("TRANSCRIPTION_SERVER_ADDRESS")
-    port = os.getenv("TRANSCRIPTION_SERVER_PORT")
-    route = os.getenv("TRANSCRIPTION_SERVER_ROUTE")
-    return f"{address}:{port}/{route}"
+    address = "http://" + os.getenv("FLASK_RUN_HOST")
+    port = os.getenv("FLASK_RUN_PORT")
+    return f"{address}:{port}/transcribe"

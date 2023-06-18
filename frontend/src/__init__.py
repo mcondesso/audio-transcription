@@ -15,15 +15,8 @@ logger = logging.getLogger(__name__)
 def create_interface():
     logger.info("Booting the app")
 
-    load_dotenv()
-
-    print("\n-----------------------")
-    print(os.getenv("TRANSCRIPTION_SERVER_PORT"))
-    print(os.getenv("TRANSCRIPTION_SERVER_ROUTE"))
-    print("-----------------------\n\n")
-    import sys
-
-    sys.exit(0)
+    # Load env variables from .env file
+    load_dotenv(dotenv_path="../.env")
 
     audio_input = Audio(source="upload", type="filepath")
     output_text = Textbox()
