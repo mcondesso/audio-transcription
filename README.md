@@ -1,6 +1,10 @@
 # Run the app
 
-- `docker compose up`
+- `docker compose up` runs the whole app
+
+Otherwise:
+- Run `poetry run flask run` from `backend` folder to run the backend
+- Run `source env/bin/active && python app.py` from `frontend` folder to run the frontend
 
 # TODO:
 
