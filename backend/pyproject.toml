@@ -10,6 +10,7 @@ python = "^3.10"
 Flask = "^2.3.2"
 SpeechRecognition = "^3.10.0"
 vosk = "^0.3.45"
+flask-cors = "^3.0.10"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"

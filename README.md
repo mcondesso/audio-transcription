@@ -6,17 +6,18 @@
 
 ## Fixes:
 
-- fix backend running with poetry
-- fix frontend running with poetry
-- fix backend running with docker compose
-- fix frontend running with docker compose
-- make sure whole app runs with docker compose
+-[x] fix backend running with poetry
+-[x] refactor backend into Flask app structure with `app.py`, `src/routes` and `src/services`
 
-## Restructure
+-[ ] fix frontend running with poetry
+-[ ] fix backend running with docker compose
+-[ ] fix frontend running with docker compose
+-[ ] make sure whole app runs with docker compose
 
-- refactor backend into Flask app structure with `app.py`, `src/routes` and `src/services`
+## Nginx
 
-- add nginx as reverse proxy
+
+-[ ] add nginx as reverse proxy
 
 ## Improve frontend
-- pick a JS framework
+-[ ] pick a JS framework
